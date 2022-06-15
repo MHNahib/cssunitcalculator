@@ -126,12 +126,12 @@ const calculate = (unitId = "px", value = 0) => {
 const updateValue = (e) => {
   const value = parseInt(e.target.value);
   const unitId = e.target.id;
-  // console.log(e);
+  console.log(e);
   calculate(unitId, value);
 };
 
-px.addEventListener("keyup", updateValue);
-percents.addEventListener("keyup", updateValue);
-point.addEventListener("keyup", updateValue);
-em.addEventListener("keyup", updateValue);
-rem.addEventListener("keyup", updateValue);
+px.addEventListener("input", updateValue);
+percents.addEventListener("input", updateValue);
+point.addEventListener("input", updateValue);
+em.addEventListener("input", updateValue);
+rem.addEventListener("input", updateValue);
