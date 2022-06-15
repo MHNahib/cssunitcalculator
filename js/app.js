@@ -61,42 +61,7 @@ const baseCalculation = {
   },
 };
 
-// const updateOnDOM = (unitId, value) => {
-//   if (unitId === "px") {
-//     per.value = baseCalculation.pxToPercents(value);
-//     point.value = baseCalculation.pxToPoint(value);
-//     em.value = baseCalculation.pxToEmAndRem(value);
-//     rem.value = baseCalculation.pxToEmAndRem(value);
-//   }
-
-//   if (unitId === "pre") {
-//     px.value = baseCalculation.percentsToPx(value);
-//     point.value = baseCalculation.percentsToPoint(value);
-//     em.value = baseCalculation.percentsToEmAndRem(value);
-//     rem.value = baseCalculation.percentsToEmAndRem(value);
-//   }
-
-//   if (unitId === "point") {
-//     px.value = baseCalculation.pointToPx(value);
-//     per.value = baseCalculation.pointToPercents(value);
-//     em.value = baseCalculation.pointToEmAndRem(value);
-//     rem.value = baseCalculation.pointToEmAndRem(value);
-//   } else {
-//     px.value = baseCalculation.emAndRemToPx(value);
-//     per.value = baseCalculation.emAndRemToPercents(value);
-//     point.value = baseCalculation.emAndRemToPoint(value);
-
-//     if (unitId === "em") rem.value = value;
-//     else em.value = value;
-//   }
-// };
-
 const calculate = (unitId = "px", value = 0) => {
-  // const position = mainArray.indexOf(unitId);
-  // // console.log(position);
-  // const triggerArray = mainArray.filter(
-  //   (unitId) => unitId != mainArray[position]
-  // );
   if (unitId === "px") {
     percents.value = baseCalculation.pxToPercents(value);
     point.value = baseCalculation.pxToPoint(value);
