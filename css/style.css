@@ -23,6 +23,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 500px;
+  height: auto;
 }
 
 .logo {
@@ -32,6 +34,10 @@ a:hover {
 .heading {
   margin: 0 0 1.8rem 0;
   font-size: 2rem;
+}
+
+.footer-text {
+  margin: 1rem 0;
 }
 
 label {
